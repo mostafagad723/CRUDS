@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="any words about your site">
+        <title>atom</title>
+        <link rel="stylesheet" href="css/normal.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="json" href="k.json">
+    </head>
+    <body>
+        
+        <form class="cruds-form">
+            <main class="container">
+                <header class="cruds-header">
+                    <h1>cruds</h1>
+                    <p>creat read update search</p>
+                    <hr>
+                </header>
+                <input type="text" id="title" name="title" placeholder="title">
+                <div class="item-one">
+                    <input  type="number" id="price" name="price" placeholder="price">
+                    <input  type="number" id="taxes" name="taxes" placeholder="taxes">
+                    <input  type="number" id="ads" name="ads" placeholder="ads">
+                    <input  type="number" id="discount" name="discount" placeholder="discount">
+                    <span class="total" id="total"></span>
+                </div>
+                <div class="item-two">
+                    <input type="text" id="count" name="count" placeholder="count">
+                    <input type="text" id="category" name="category" placeholder="category">
+                    <button id="creat">Creat</button>
+                    <input type="search" name="ser" id="search" placeholder="search">
+                    <div class="search-btn">
+                        <button id="btn1">search by title</button>
+                        <button id="btn2">search by category</button>
+                    </div>
+                </div>
+            </main>
+        </form>
+        <main class="container">
+            <div id="deleteAll"></div>
+            <table class="t-data">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+                        
+                    </tbody>
+                </table>
+            </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    outline: none;
+    transition: 0.5s;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+:root {
+    --main-btn-color:#cc0acc;
+    --main-color:#1E045C;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #222;
+    color: whitesmoke;
+    font-family: system-ui;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Mobile Screen */
+@media(max-width:767px) {
+    .container {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* small screen */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medim screen */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* larg screed */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.cruds-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media(max-width:767px) {
+    .cruds-header {
+        margin-bottom: 20px;
+    }
+}
+
+.cruds-header h1 {
+    font-size: 30px;
+    color: var(--main-btn-color);
+}
+
+.cruds-header>p {
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.cruds-header>hr {
+    border-color: var(--main-btn-color);
+}
+
+input {
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+
+input:focus {
+    background-color: #000;
+    /* scale: 1.03; */
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+input:focus ::placeholder {
+    letter-spacing: 2px;
+}
+
+[id="title"],
+[id="count"],
+[id="category"],
+[id="creat"],
+[id="search"] {
+    width: 100%;
+}
+
+.item-one {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-one > input {
+    min-width: 150px;
+}
+
+.item-one .total {
+    /* position: relative; */
+    width: 100%;
+    padding: 18px;
+    background-color: salmon;
+    font-weight: bold;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.item-one .total::before {
+    /* position: absolute; */
+    content: "Total : ";
+    /* z-index: 1; */
+}
+
+.total-full {
+    background-color: green !important;
+}
+
+@media (max-width:767px) {
+    .item-one {
+        margin: 20px 0;
+    }
+    .item-one>input {
+        width: 100%;
+    }
+    .item-one .total{
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    [id="discount"] {
+        width: 100%;
+    }
+}
+
+button {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+button:hover {
+    background-color: var(--main-btn-color);
+    letter-spacing: 2px;
+}
+
+.search-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-btn button {
+    width: 40%;
+}
+
+@media(max-width:767px){
+    .search-btn button {
+        width: 100%;
+        margin: 10 auto;
+        
+    }
+}
+
+[id="deleteAll"] button {
+    width: 100%;
+    margin-top: -20px;
+}
+.t-data {
+    width: 100%;
+    text-align: center;
+}
+
+td , th {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.t-data th {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+}
+
+[id="updateBtn"],
+[id="deleteBtn"] {
+    width: 100px;
+}
+
+thead tr th {
+    border-bottom:  1px solid var(--main-btn-color);
+}
